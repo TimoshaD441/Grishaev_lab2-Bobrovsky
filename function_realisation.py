@@ -7,6 +7,6 @@ def check_str_for_passport(stroka):
 def search_strs_for_passport(stroka):
     passport_strs = []
     for i in range(len(stroka)-10):
-        if check_str_for_passport(stroka[i:i+10]):
-            passport_strs.append(stroka[i:i+10])
+        if check_str_for_passport(stroka[i:i+11]) == 1:
+            passport_strs.append(stroka[i:i+11])
     return passport_strs
